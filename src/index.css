@@ -1,13 +1,38 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+@import url(/node_modules/bootstrap/dist/css/bootstrap-grid.min.css);
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body,html{
+  box-sizing: border-box;
+  font-family:"Poppins", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
 }
+.card{
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(255,255,255,0.2);
+}
+.cardbg{background-color: #202020; color: #fff; padding: 10px; display: flex; flex-direction: column; gap: 20px;}
+.cardbg ul li{margin-bottom: 20px;}
+.expense-inside{background-color: cadetblue; padding: 10px; display: flex;align-items: center; justify-content: space-between;}
+.dnt{padding: 10px;background-color: #202020;}
+.form-card{background-color: blueviolet;color: aliceblue;padding: 10px; }
+#formsss .form{display: flex; gap: 20px;margin: 0 15px; }
+.form-content{display: flex; gap: 20px;}
+.form-content label{font-size: 20px;}
+.form-content input{padding: 8px;border: 2px solid transparent;border-radius: 5px;}
+.form-content input:hover,.form-content input:focus,.form-content input:active{border: 2px solid black;}
+.form-btn{max-width: 100%;width: fit-content;padding: 10px;cursor: pointer; background-color: darkgoldenrod; color: #fff; font-weight: 500; font-size: 20px; border: 1px solid transparent; border-radius: 10px; }
+.form-btn:hover,.form-btn:focus,.form-btn:active{border: 1px solid black;}
+
+.withoutform{display: flex;justify-content: center; align-items: center;}
+/* .withform{display: flex;width: 100%;} */
+
+
+.expenses-filter{display: flex; justify-content: space-between;align-items: center; font-size: 20px; font-weight: 500;}
+.select-dropdown{padding: 5px; background-color: #202020; color: #fff; }
+
+.chart{display: flex; justify-content: space-evenly; padding:50px 10px; border-radius: 10px;flex-wrap: wrap; background-color: #f8dfff; }
+
+.chartbar{height: 100%; display: flex; flex-direction: column; align-items: center;}
+.chartbar-inner{overflow:hidden; height: 10rem; width: 10px; border: 1px solid black; border-radius: 10px; display: flex; flex-direction: column;justify-content: flex-end;}
+.chartbar-fill{width: 100%; background-color: #4532b7;transition: all 0.5s ease;}
+.chartbar-fill-day{width: 100%; background-color: #325ab7;transition: all 0.5s ease;}
+.chartbar-label{font-size: 18px; font-weight: 500; color: black;}
+
